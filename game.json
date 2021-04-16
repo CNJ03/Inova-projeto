@@ -16,7 +16,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "0.0.2",
-    "name": "Inova_game",
+    "name": "Boticis lab",
     "author": "Tech Boticis",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -96,7 +96,24 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assests/images/logo_image-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assests\\images\\logo_image-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "fontes/Schoolwork-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fontes\\Schoolwork-Regular.ttf",
+        "userAdded": true
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
@@ -110,15 +127,23 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/desafios_game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/logo"
     }
   ],
   "externalEvents": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/resolucoes_configuracoes"
+      "referenceTo": "/externalEvents/configuracoes_gerais"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/cursortype"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/alignobject"
