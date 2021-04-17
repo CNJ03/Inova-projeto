@@ -98,20 +98,56 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
-        "file": "assests/images/logo_image-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assests\\images\\logo_image-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "fontes/Schoolwork-Regular.ttf",
         "kind": "font",
         "metadata": "",
         "name": "fontes\\Schoolwork-Regular.ttf",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo_image-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo_image-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/motor_barra-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\motor_barra-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/roda_boba-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\roda_boba-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sensor_barra-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sensor_barra-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/peca_barra-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\peca_barra-1-0.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -122,15 +158,15 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/logo"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/menu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/desafios_game"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/logo"
     }
   ],
   "externalEvents": [
