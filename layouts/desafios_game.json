@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 32,
@@ -21,9 +21,9 @@
     "gridR": 158,
     "gridType": "rectangular",
     "gridWidth": 32,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.18000000000000044
+    "zoomFactor": 0.5800000000000022
   },
   "objectsGroups": [],
   "variables": [],
@@ -38,8 +38,8 @@
       "persistentUuid": "57e44419-1a16-4197-81d7-c2c3452fa16f",
       "width": 128,
       "x": 32,
-      "y": 192,
-      "zOrder": 1,
+      "y": 260,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -47,14 +47,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 160,
+      "height": 128,
       "layer": "",
       "locked": false,
       "name": "Motor",
       "persistentUuid": "2cae80f6-5dcd-44d8-b39a-24709d73c231",
-      "width": 160,
-      "x": 0,
-      "y": 32,
+      "width": 128,
+      "x": 32,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -68,9 +68,9 @@
       "locked": false,
       "name": "peca",
       "persistentUuid": "ca61dfc8-84f6-40e6-9b2e-a51345b5347f",
-      "width": 160,
-      "x": 0,
-      "y": 320,
+      "width": 128,
+      "x": 32,
+      "y": 360,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -79,15 +79,175 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 160,
+      "height": 128,
       "layer": "",
       "locked": false,
       "name": "sensor",
       "persistentUuid": "ad2993b1-6f10-43ab-97d0-78e89d6cd460",
-      "width": 160,
-      "x": 0,
-      "y": 448,
+      "width": 128,
+      "x": 32,
+      "y": 460,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "locked": false,
+      "name": "Pneu",
+      "persistentUuid": "043d3b1f-935a-489f-b53e-b8ae0d24166d",
+      "width": 128,
+      "x": 32,
+      "y": 560,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 864,
+      "layer": "",
+      "locked": false,
+      "name": "Fundo_game",
+      "persistentUuid": "839edee3-e480-495b-b58e-7f198cb4129b",
+      "width": 1440,
+      "x": -96,
+      "y": -64,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 864,
+      "layer": "",
+      "locked": false,
+      "name": "barra_lateral",
+      "persistentUuid": "5db076b3-6721-4e67-80c4-4ef5afa8c916",
+      "width": 224,
+      "x": 96,
+      "y": 544,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "height": 224,
+      "layer": "",
+      "locked": false,
+      "name": "Time_fundo",
+      "persistentUuid": "666ccca3-da9e-4535-8d4a-a5745abd9b99",
+      "width": 192,
+      "x": 96,
+      "y": 0,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 448,
+      "layer": "",
+      "locked": false,
+      "name": "Robo",
+      "persistentUuid": "01ff6b8e-b34b-4485-b066-a3c3775ba421",
+      "width": 416,
+      "x": 416,
+      "y": 192,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Time",
+      "persistentUuid": "f7620000-62e8-422a-9fc6-548e4ebcb83b",
+      "width": 0,
+      "x": 589,
+      "y": 13,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "text_pecas",
+      "persistentUuid": "e666d140-5336-478a-9c01-b3d8750530ff",
+      "width": 0,
+      "x": 56,
+      "y": 13,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "height": 224,
+      "layer": "",
+      "locked": false,
+      "name": "Time_fundo",
+      "persistentUuid": "1d191ad1-e42b-45f5-9c8e-1144e5f4d58c",
+      "width": 192,
+      "x": 608,
+      "y": 0,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "height": 352,
+      "layer": "",
+      "locked": false,
+      "name": "Time_fundo",
+      "persistentUuid": "beaea1e8-b2f2-4d33-990e-0c65f8456ddd",
+      "width": 352,
+      "x": 1144,
+      "y": 162,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "text_desafio",
+      "persistentUuid": "992b0ab0-545a-4357-b159-7a1deb4edf55",
+      "width": 0,
+      "x": 1081,
+      "y": -2,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -153,6 +313,229 @@
       "width": 32,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "Pneu",
+      "rightMargin": 0,
+      "tags": "",
+      "texture": "assets\\pneu_barra-1.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "Fundo_game",
+      "rightMargin": 0,
+      "tags": "",
+      "texture": "assets\\fundo_game-1.png",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "name": "barra_lateral",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "barra_lateral",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\barra_lateral-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 205.5,
+                    "y": 646.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Time_fundo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "timer_fundo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\timer_fundo-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 177.5,
+                    "y": 219.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Robo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "robo_montar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\robo_montar-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "Time",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "16",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 85,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "text_desafio_titulo",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Desafio\n",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "text_desafio",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Desafio\n",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "text_pecas",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "0/10",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 70,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "events": [],

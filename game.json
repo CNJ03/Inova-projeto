@@ -115,6 +115,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/fundo_game-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_game-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/motor_barra-1.png",
         "kind": "image",
         "metadata": "",
@@ -133,6 +142,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/peca_barra-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\peca_barra-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/sensor_barra-1.png",
         "kind": "image",
         "metadata": "",
@@ -142,12 +160,57 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/peca_barra-1-0.png",
+        "file": "assets/pneu_barra-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\peca_barra-1-0.png",
+        "name": "assets\\pneu_barra-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/barra_lateral-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\barra_lateral-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/barra_lateral-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\barra_lateral-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/timer_fundo-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\timer_fundo-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/robo_montar-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\robo_montar-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/timer_fundo-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\timer_fundo-1-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
