@@ -115,15 +115,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/fundo_game-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fundo_game-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/motor_barra-1.png",
         "kind": "image",
         "metadata": "",
@@ -169,30 +160,12 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/barra_lateral-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\barra_lateral-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/barra_lateral-1-0.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\barra_lateral-1-0.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/timer_fundo-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\timer_fundo-1.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -211,6 +184,94 @@
         "name": "assets\\timer_fundo-1-0.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundo_menu-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_menu-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundo_set_menu-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_set_menu-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "fontes/good times rg.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "good times rg.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundo_game-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_game-1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundo_set_menu3-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_set_menu3-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundo_set_menu4-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fundo_set_menu4-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fundo_set_menu2-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Fundo_set_menu2-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cerebro_barra-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Cerebro_barra-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/peca_montagem_barra-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\peca_montagem_barra-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hitbox_barraderolagem-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\hitbox_barraderolagem-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
