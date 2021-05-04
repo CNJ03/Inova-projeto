@@ -272,6 +272,15 @@
         "name": "assets\\hitbox_barraderolagem-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Seta_abertura_pecas-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Seta_abertura_pecas-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
