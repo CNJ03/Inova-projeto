@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 32,
@@ -21,9 +21,9 @@
     "gridR": 158,
     "gridType": "rectangular",
     "gridWidth": 32,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.38000000000000433
+    "zoomFactor": 0.4800000000000054
   },
   "objectsGroups": [
     {
@@ -57,7 +57,7 @@
     {
       "name": "Tempo_game",
       "type": "string",
-      "value": "2"
+      "value": "5"
     }
   ],
   "instances": [
@@ -207,15 +207,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 96,
       "layer": "",
       "locked": false,
       "name": "Time",
       "persistentUuid": "f7620000-62e8-422a-9fc6-548e4ebcb83b",
-      "width": 0,
-      "x": 573,
-      "y": 27,
+      "width": 160,
+      "x": 577,
+      "y": 14,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -247,7 +247,7 @@
       "persistentUuid": "1d191ad1-e42b-45f5-9c8e-1144e5f4d58c",
       "width": 192,
       "x": 608,
-      "y": 0,
+      "y": 32,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -265,22 +265,6 @@
       "x": 1144,
       "y": 162,
       "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "text_desafio",
-      "persistentUuid": "992b0ab0-545a-4357-b159-7a1deb4edf55",
-      "width": 0,
-      "x": 1081,
-      "y": -2,
-      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -345,6 +329,54 @@
       "x": 64,
       "y": 672,
       "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 262,
+      "layer": "",
+      "locked": false,
+      "name": "Text_desafio",
+      "persistentUuid": "9a654488-105a-4b42-881e-44dd192e7803",
+      "width": 260,
+      "x": 1011,
+      "y": 50,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "text_desafio_titulo",
+      "persistentUuid": "7fe0c068-1410-4f21-b19b-f46e67736a69",
+      "width": 0,
+      "x": 1081,
+      "y": 1,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Time_est",
+      "persistentUuid": "6886ad37-be67-4cd1-980a-678f3c0eddc0",
+      "width": 0,
+      "x": 569,
+      "y": 54,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -685,6 +717,25 @@
     {
       "bold": true,
       "italic": false,
+      "name": "Time_est",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "text",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 90,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
       "name": "Time",
       "smoothed": true,
       "tags": "",
@@ -692,9 +743,9 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "10m",
+      "string": "10",
       "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 80,
+      "characterSize": 90,
       "color": {
         "b": 255,
         "g": 255,
@@ -711,7 +762,7 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "ewrre",
+      "string": "Desafio",
       "font": "fontes\\Schoolwork-Regular.ttf",
       "characterSize": 60,
       "color": {
@@ -721,22 +772,20 @@
       }
     },
     {
-      "bold": true,
-      "italic": false,
-      "name": "text_desafio",
-      "smoothed": true,
+      "name": "Text_desafio",
       "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
+      "type": "BBText::BBText",
       "variables": [],
       "behaviors": [],
-      "string": "Desafio",
-      "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 60,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+      "content": {
+        "text": "[b]1. Adicione os motores ao setor de montagem no centro da tela[/b]",
+        "opacity": 255,
+        "fontSize": 50,
+        "visible": true,
+        "color": "#ffffff",
+        "fontFamily": "fontes\\Schoolwork-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
       }
     },
     {
@@ -876,7 +925,7 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "Toque para iniciar",
+      "string": "Toque aqui para iniciar",
       "font": "fontes\\Schoolwork-Regular.ttf",
       "characterSize": 100,
       "color": {
@@ -888,12 +937,21 @@
   ],
   "events": [
     {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Configuracoes_gerais"
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Inicio de partida",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -940,6 +998,18 @@
                 "\"Effect_brilho\"",
                 "\"brightness\"",
                 "0.7"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Texto_iniciar_game",
+                ""
               ],
               "subInstructions": []
             }
@@ -995,7 +1065,19 @@
               "parameters": [
                 "Time",
                 "=",
-                "VariableString(Tempo_game) + \"m\""
+                "VariableString(Tempo_game) "
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Time_est",
+                "=",
+                "\"min\""
               ],
               "subInstructions": []
             }
@@ -1029,7 +1111,19 @@
               "parameters": [
                 "Time",
                 "=",
-                "VariableString(Tempo_game_s) + \"s\""
+                "VariableString(Tempo_game_s) "
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Time_est",
+                "=",
+                "\"seg\""
               ],
               "subInstructions": []
             }
@@ -1070,17 +1164,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MouseButtonPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "KeyPressed"
                       },
                       "parameters": [
@@ -1088,6 +1171,39 @@
                         "Return"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Texto_iniciar_game",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1127,6 +1243,76 @@
                     "Time",
                     "=",
                     "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Texto_iniciar_game",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "Texto_iniciar_game",
+                    "=",
+                    "160"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Texto_iniciar_game",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "Texto_iniciar_game",
+                    "=",
+                    "255"
                   ],
                   "subInstructions": []
                 }
@@ -1580,7 +1766,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Barra de rolagem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1642,7 +1828,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1723,8 +1909,8 @@
                   },
                   "parameters": [
                     "pecas_barra",
-                    "=",
-                    "255"
+                    "+",
+                    "5"
                   ],
                   "subInstructions": []
                 }
@@ -1767,8 +1953,8 @@
                   },
                   "parameters": [
                     "pecas_barra",
-                    "+",
-                    "-10"
+                    "-",
+                    "20"
                   ],
                   "subInstructions": []
                 }
@@ -1812,7 +1998,7 @@
                   "parameters": [
                     "pecas_barra",
                     "+",
-                    "10"
+                    "20"
                   ],
                   "subInstructions": []
                 }
@@ -1868,7 +2054,19 @@
                   "parameters": [
                     "pecas_barra",
                     "+",
-                    "10"
+                    "20"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Hitbox_barraderolagem",
+                    "+",
+                    "20"
                   ],
                   "subInstructions": []
                 }
@@ -1910,7 +2108,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1964,20 +2162,11 @@
                   "subInstructions": []
                 }
               ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                }
-              ]
+              "events": []
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2031,16 +2220,7 @@
                   "subInstructions": []
                 }
               ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                }
-              ]
+              "events": []
             },
             {
               "disabled": false,
@@ -2104,6 +2284,18 @@
                   },
                   "parameters": [
                     "Seta_abertura_pecas",
+                    "-",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Hitbox_barraderolagem",
                     "-",
                     "10"
                   ],
@@ -2220,6 +2412,18 @@
                   },
                   "parameters": [
                     "Seta_abertura_pecas",
+                    "+",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Hitbox_barraderolagem",
                     "+",
                     "10"
                   ],
@@ -2285,14 +2489,14 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Criação e montagem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2633,7 +2837,7 @@
                       "parameters": [
                         "Cerebro_transpa",
                         "=",
-                        "160"
+                        "116"
                       ],
                       "subInstructions": []
                     },
@@ -2645,7 +2849,7 @@
                       "parameters": [
                         "Cerebro_transpa",
                         "=",
-                        "160"
+                        "180"
                       ],
                       "subInstructions": []
                     },

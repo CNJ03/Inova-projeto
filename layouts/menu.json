@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.4800000000000041
+    "zoomFactor": 0.360000000000005
   },
   "objectsGroups": [
     {
@@ -69,7 +69,7 @@
       "width": 0,
       "x": 563,
       "y": 333,
-      "zOrder": 4,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -197,7 +197,7 @@
       "width": 0,
       "x": 530,
       "y": 461,
-      "zOrder": 7,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -262,6 +262,38 @@
       "x": 3,
       "y": 5,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 547,
+      "layer": "Abas",
+      "locked": false,
+      "name": "Creditos",
+      "persistentUuid": "ec31ed82-18f3-4bd7-a98c-1cdba1e8aa05",
+      "width": 645,
+      "x": 327,
+      "y": 112,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Abas",
+      "locked": false,
+      "name": "Esc",
+      "persistentUuid": "3d16104c-7853-4749-bef9-0e6ec221efeb",
+      "width": 0,
+      "x": 560,
+      "y": 673,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -380,6 +412,40 @@
         "b": 255,
         "g": 255,
         "r": 255
+      }
+    },
+    {
+      "name": "Esc",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Sair[/b]",
+        "opacity": 255,
+        "fontSize": 25,
+        "visible": true,
+        "color": "#ffffff",
+        "fontFamily": "good times rg.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Creditos",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Gerente de projeto[/b]\nVinicius andrade\n\n[b]Programador[/b]\nCarleilton\n\n[b]Roteiristas e apoio técnico[/b]\nMaxley furtado \nGabryella Santana \nPaula Vitoria\n\n[b]Designers[/b]\nJose Junior\n\n\n[b]Tech Botics Studios[/b]",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "#ffffff",
+        "fontFamily": "good times rg.ttf",
+        "align": "center",
+        "wordWrap": true
       }
     },
     {
@@ -632,11 +698,66 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "comandos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCentered"
+              },
+              "parameters": [
+                "Creditos",
+                "Creditos",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Esc",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -667,6 +788,17 @@
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
               ],
               "subInstructions": []
             }
@@ -750,6 +882,17 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -782,7 +925,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -795,6 +938,17 @@
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
               ],
               "subInstructions": []
             }
@@ -825,6 +979,228 @@
               "subInstructions": []
             }
           ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Abas\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetLayerEffectParameter"
+                  },
+                  "parameters": [
+                    "",
+                    "\"\"",
+                    "\"Effect_menu_brilho\"",
+                    "\"brightness\"",
+                    "0.3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Esc",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "\"\"",
+                "\"Effect_menu_brilho\"",
+                "\"brightness\"",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Esc",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "Esc",
+                "=",
+                "200"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Esc",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "Esc",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Esc",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CursorType::ChangeCursorType"
+              },
+              "parameters": [
+                "",
+                "\"grab\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -842,6 +1218,17 @@
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
               ],
               "subInstructions": []
             }
@@ -923,6 +1310,17 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -968,6 +1366,17 @@
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
               ],
               "subInstructions": []
             }
@@ -1017,6 +1426,17 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -1062,6 +1482,17 @@
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
               ],
               "subInstructions": []
             }
@@ -1182,9 +1613,50 @@
           "viewportRight": 1,
           "viewportTop": 0,
           "width": 0
+        },
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "Brightness",
+          "name": "Effect_menu_brilho",
+          "doubleParameters": {
+            "brightness": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 1702453580,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 9631824,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Abas",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "LightNight",
+          "name": "Effect",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": []
