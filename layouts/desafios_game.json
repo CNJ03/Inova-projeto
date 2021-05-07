@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.4800000000000054
+    "zoomFactor": 0.3800000000000075
   },
   "objectsGroups": [
     {
@@ -58,6 +58,11 @@
       "name": "Tempo_game",
       "type": "string",
       "value": "5"
+    },
+    {
+      "name": "Pecas_inser",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -70,9 +75,9 @@
       "name": "Roda_boba",
       "persistentUuid": "57e44419-1a16-4197-81d7-c2c3452fa16f",
       "width": 128,
-      "x": 32,
+      "x": 57,
       "y": 480,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -86,9 +91,9 @@
       "name": "Motor",
       "persistentUuid": "2cae80f6-5dcd-44d8-b39a-24709d73c231",
       "width": 128,
-      "x": 32,
+      "x": 55,
       "y": 160,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -102,9 +107,9 @@
       "name": "peca",
       "persistentUuid": "ca61dfc8-84f6-40e6-9b2e-a51345b5347f",
       "width": 128,
-      "x": 32,
+      "x": 55,
       "y": 256,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -118,9 +123,9 @@
       "name": "sensor",
       "persistentUuid": "ad2993b1-6f10-43ab-97d0-78e89d6cd460",
       "width": 128,
-      "x": 32,
-      "y": 602,
-      "zOrder": 2,
+      "x": 56,
+      "y": 601,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -134,9 +139,9 @@
       "name": "Pneu",
       "persistentUuid": "043d3b1f-935a-489f-b53e-b8ae0d24166d",
       "width": 128,
-      "x": 32,
+      "x": 51,
       "y": 352,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -149,7 +154,7 @@
       "locked": false,
       "name": "Fundo_game",
       "persistentUuid": "839edee3-e480-495b-b58e-7f198cb4129b",
-      "width": 1440,
+      "width": 1472,
       "x": -96,
       "y": -64,
       "zOrder": 0,
@@ -160,15 +165,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 864,
+      "height": 960,
       "layer": "",
       "locked": false,
       "name": "barra_lateral",
       "persistentUuid": "5db076b3-6721-4e67-80c4-4ef5afa8c916",
-      "width": 224,
-      "x": 96,
-      "y": 1088,
-      "zOrder": 1,
+      "width": 416,
+      "x": 46,
+      "y": 1118,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -214,7 +219,7 @@
       "name": "Time",
       "persistentUuid": "f7620000-62e8-422a-9fc6-548e4ebcb83b",
       "width": 160,
-      "x": 577,
+      "x": 579,
       "y": 14,
       "zOrder": 3,
       "numberProperties": [],
@@ -278,9 +283,9 @@
       "name": "Cerebro",
       "persistentUuid": "ea8b57a7-1b3d-4731-86b0-48a2ad8b959e",
       "width": 160,
-      "x": 16,
+      "x": 40,
       "y": 736,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -294,7 +299,7 @@
       "name": "Peca_montagem",
       "persistentUuid": "18d1dd74-e36c-4ba7-9c48-1d0211961e80",
       "width": 128,
-      "x": 32,
+      "x": 52,
       "y": 864,
       "zOrder": 13,
       "numberProperties": [],
@@ -304,14 +309,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 173,
+      "height": 509,
       "layer": "",
       "locked": false,
       "name": "Hitbox_barraderolagem",
       "persistentUuid": "aa3d3c87-7dba-4f97-a6c8-e2aa5bb42de0",
-      "width": 197,
+      "width": 247,
       "x": -2,
-      "y": -15,
+      "y": -378,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -326,7 +331,7 @@
       "name": "Seta_abertura_pecas",
       "persistentUuid": "de61af85-282a-4f8d-bf74-4d0a503b749c",
       "width": 64,
-      "x": 64,
+      "x": 83,
       "y": 672,
       "zOrder": 14,
       "numberProperties": [],
@@ -342,8 +347,8 @@
       "name": "Text_desafio",
       "persistentUuid": "9a654488-105a-4b42-881e-44dd192e7803",
       "width": 260,
-      "x": 1011,
-      "y": 50,
+      "x": 1010,
+      "y": 57,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -377,6 +382,70 @@
       "x": 569,
       "y": 54,
       "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Iniciar",
+      "locked": false,
+      "name": "Nome_usuario",
+      "persistentUuid": "4c53afaf-1538-446b-a726-24d5516645b0",
+      "width": 0,
+      "x": 441,
+      "y": 217,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Iniciar",
+      "locked": false,
+      "name": "Entrada_name_de_usuario",
+      "persistentUuid": "e6484498-d694-4fc1-a8d8-a15250759a5e",
+      "width": 0,
+      "x": 576,
+      "y": 288,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Nome_usuario_in",
+      "persistentUuid": "230ee723-ed68-4a29-9c06-dc9c10af557a",
+      "width": 0,
+      "x": 1344,
+      "y": 384,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 992,
+      "layer": "",
+      "locked": false,
+      "name": "barra_lateral_fundo",
+      "persistentUuid": "d7c68648-f690-4550-aa7f-cb68fc8b6f85",
+      "width": 416,
+      "x": 27,
+      "y": 576,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -570,13 +639,52 @@
       "name": "Fundo_game",
       "rightMargin": 0,
       "tags": "",
-      "texture": "assets\\fundo_game-1-1.png",
-      "tiled": true,
+      "texture": "assets\\fundo_game-1-1-1-1.png",
+      "tiled": false,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 32,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "name": "barra_lateral_fundo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "barra_lateral",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\barra_lateral-1-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 205.5,
+                    "y": 646.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "barra_lateral",
@@ -596,7 +704,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\barra_lateral-1-0.png",
+                  "image": "assets\\barra_lateral-1-2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -661,7 +769,13 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "estagio_montagem",
+          "type": "string",
+          "value": ""
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -690,20 +804,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 63,
-                        "y": 71
+                        "x": 99,
+                        "y": 79
                       },
                       {
-                        "x": 703,
-                        "y": 75
+                        "x": 677,
+                        "y": 79
                       },
                       {
-                        "x": 707,
+                        "x": 673,
                         "y": 682
                       },
                       {
-                        "x": 61,
-                        "y": 689
+                        "x": 110,
+                        "y": 683
                       }
                     ]
                   ]
@@ -778,7 +892,7 @@
       "variables": [],
       "behaviors": [],
       "content": {
-        "text": "[b]1. Adicione os motores ao setor de montagem no centro da tela[/b]",
+        "text": "1. Adicione os motores ao setor de montagem no centro da tela",
         "opacity": 255,
         "fontSize": 50,
         "visible": true,
@@ -918,6 +1032,25 @@
     {
       "bold": true,
       "italic": false,
+      "name": "Nome_usuario",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Digite seu nome",
+      "font": "fontes\\Schoolwork-Regular.ttf",
+      "characterSize": 70,
+      "color": {
+        "b": 28,
+        "g": 231,
+        "r": 248
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
       "name": "Texto_iniciar_game",
       "smoothed": true,
       "tags": "",
@@ -927,11 +1060,35 @@
       "behaviors": [],
       "string": "Toque aqui para iniciar",
       "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 100,
+      "characterSize": 65,
       "color": {
         "b": 28,
         "g": 231,
         "r": 248
+      }
+    },
+    {
+      "name": "Nome_usuario_in",
+      "tags": "",
+      "type": "TextEntryObject::TextEntry",
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "name": "Entrada_name_de_usuario",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "Cnj ",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "#ffffff",
+        "fontFamily": "Prodelt Co.ttf",
+        "align": "left",
+        "wordWrap": true
       }
     }
   ],
@@ -997,7 +1154,7 @@
                 "\"\"",
                 "\"Effect_brilho\"",
                 "\"brightness\"",
-                "0.7"
+                "0.3"
               ],
               "subInstructions": []
             },
@@ -1243,6 +1400,18 @@
                     "Time",
                     "=",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "Nome_usuario",
+                    "=",
+                    "Nome_usuario_in.String()"
                   ],
                   "subInstructions": []
                 }
@@ -1828,7 +1997,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1874,7 +2043,7 @@
                   "parameters": [
                     "pecas_barra",
                     "-",
-                    "5"
+                    "10"
                   ],
                   "subInstructions": []
                 }
@@ -1910,7 +2079,7 @@
                   "parameters": [
                     "pecas_barra",
                     "+",
-                    "5"
+                    "10"
                   ],
                   "subInstructions": []
                 }
@@ -1941,6 +2110,18 @@
                     "Peca_montagem",
                     ">",
                     "580"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "abertotestar",
+                    "=",
+                    "2"
                   ],
                   "subInstructions": []
                 }
@@ -1984,7 +2165,19 @@
                   "parameters": [
                     "Motor",
                     "<",
-                    "160"
+                    "265"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "abertotestar",
+                    "=",
+                    "2"
                   ],
                   "subInstructions": []
                 }
@@ -2018,7 +2211,7 @@
                   "parameters": [
                     "Peca_montagem",
                     "<=",
-                    "1408"
+                    "1398"
                   ],
                   "subInstructions": []
                 },
@@ -2086,7 +2279,7 @@
                   "parameters": [
                     "Peca_montagem",
                     ">=",
-                    "1408"
+                    "1398"
                   ],
                   "subInstructions": []
                 }
@@ -2160,6 +2353,18 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "abertotestar",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2216,6 +2421,18 @@
                     "Barra_aberta",
                     "=",
                     "3"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "abertotestar",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -2317,7 +2534,7 @@
                   "parameters": [
                     "barra_lateral",
                     "<=",
-                    "544"
+                    "694"
                   ],
                   "subInstructions": []
                 },
@@ -2489,7 +2706,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Criação e montagem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4239,6 +4456,1093 @@
               ]
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
+      "name": "Usuario armazenamento",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "Entrada_name_de_usuario",
+                "=",
+                "\"Seu nome\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Iniciar\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Entrada_name_de_usuario",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Entry_habilitado",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CursorType::ChangeCursorType"
+              },
+              "parameters": [
+                "",
+                "\"text\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Entrada_name_de_usuario",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Nome_usuario",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Entry_habilitado",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "Entrada_name_de_usuario",
+                "=",
+                "Nome_usuario_in.String()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": false,
+      "name": "Montagem mecanica",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Motor_transpa",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Motor_transpa",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"2.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "peca_transpa",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "peca_transpa",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Peca_montagem_transp",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Peca_montagem_transp",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "peca_transpa",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "peca_transpa",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "sensor_transpa",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "sensor_transpa",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Pneu_transpa",
+                "Robo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Robo",
+                "estagio_montagem",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Pneu_transpa",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"102;204;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robo",
+                    "estagio_montagem",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Bar_arrast",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "=",
+                    "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "Text_desafio",
+                    "\"233;1;29\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "text_pecas",
+                "=",
+                "Robo.VariableString(estagio_montagem) + \"/10\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "parameters": []

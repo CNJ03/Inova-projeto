@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.360000000000005
+    "zoomFactor": 0.4800000000000051
   },
   "objectsGroups": [
     {
@@ -297,6 +297,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 302,
+      "layer": "Abas",
+      "locked": false,
+      "name": "Option",
+      "persistentUuid": "8e3fa473-ac49-4d92-9405-a65d7bb179f5",
+      "width": 759,
+      "x": 739,
+      "y": 112,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -424,6 +440,23 @@
         "text": "[b]Sair[/b]",
         "opacity": 255,
         "fontSize": 25,
+        "visible": true,
+        "color": "#ffffff",
+        "fontFamily": "good times rg.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "Option",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Opcoes[/b]\n\nSom da musica\n\nSom dos efeitos sonoros\n\n",
+        "opacity": 255,
+        "fontSize": 30,
         "visible": true,
         "color": "#ffffff",
         "fontFamily": "good times rg.ttf",
@@ -698,7 +731,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "comandos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -751,6 +784,18 @@
               "parameters": [
                 "",
                 "Esc",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Option",
                 ""
               ],
               "subInstructions": []
@@ -859,6 +904,20 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "abs-confirm-1.wav",
+                    "",
+                    "80",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -867,7 +926,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -921,7 +980,89 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Abas\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetLayerEffectParameter"
+                  },
+                  "parameters": [
+                    "",
+                    "\"\"",
+                    "\"Effect_menu_brilho\"",
+                    "\"brightness\"",
+                    "0.3"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Creditos"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "abs-confirm-1.wav",
+                    "",
+                    "80",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Option",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -1022,6 +1163,41 @@
                     "0.3"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "abs-confirm-1.wav",
+                    "",
+                    "80",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Option"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Creditos",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1091,6 +1267,20 @@
                 "\"\"",
                 "\"Effect_menu_brilho\"",
                 "\"brightness\"",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "abs-cancel-1.wav",
+                "",
+                "80",
                 "1"
               ],
               "subInstructions": []
