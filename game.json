@@ -263,33 +263,6 @@
         "userAdded": true
       },
       {
-        "file": "audios/abs-confirm-1.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "abs-confirm-1.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": true,
-        "userAdded": true
-      },
-      {
-        "file": "audios/abs-cancel-1.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "abs-cancel-1.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": true,
-        "userAdded": true
-      },
-      {
-        "file": "Menu_Sound_Error.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "Menu_Sound_Error.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "assets/barra_lateral-1-2.png",
         "kind": "image",
@@ -333,6 +306,24 @@
         "name": "assets\\timer_fundo-1-2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "audios/servo_ice_lense_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "servo_ice_lense_04.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "userAdded": true
+      },
+      {
+        "file": "audios/SOS 079.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SOS 079.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -344,6 +335,16 @@
       "name": "Nome_usuario",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "Audio_musica_global",
+      "type": "string",
+      "value": "100"
+    },
+    {
+      "name": "Audio_efeitos_global",
+      "type": "string",
+      "value": "100"
     }
   ],
   "layouts": [

@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.5400000000000003
+    "zoomFactor": 0.6000000000000003
   },
   "objectsGroups": [],
   "variables": [],
@@ -139,6 +139,21 @@
             "",
             "yes",
             ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "servo_ice_lense_04.wav",
+            "1",
+            "",
+            "60",
+            "1.5"
           ],
           "subInstructions": []
         }
@@ -260,7 +275,7 @@
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {

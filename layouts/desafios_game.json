@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.9800000000000084
+    "zoomFactor": 0.5000000000000089
   },
   "objectsGroups": [
     {
@@ -203,7 +203,7 @@
       "name": "Time",
       "persistentUuid": "f7620000-62e8-422a-9fc6-548e4ebcb83b",
       "width": 100,
-      "x": 606,
+      "x": 604,
       "y": 46,
       "zOrder": 3,
       "numberProperties": [],
@@ -222,22 +222,6 @@
       "x": 56,
       "y": 13,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 288,
-      "layer": "",
-      "locked": false,
-      "name": "Time_fundo",
-      "persistentUuid": "1d191ad1-e42b-45f5-9c8e-1144e5f4d58c",
-      "width": 288,
-      "x": 545,
-      "y": 28,
-      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -347,7 +331,7 @@
       "name": "Time_est",
       "persistentUuid": "6886ad37-be67-4cd1-980a-678f3c0eddc0",
       "width": 0,
-      "x": 585,
+      "x": 583,
       "y": 102,
       "zOrder": 17,
       "numberProperties": [],
@@ -446,6 +430,54 @@
       "x": 741,
       "y": 13,
       "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 288,
+      "layer": "",
+      "locked": false,
+      "name": "Time_fundo",
+      "persistentUuid": "a51b7b1d-9d3d-40c2-9a22-cd5e32d33193",
+      "width": 288,
+      "x": 545,
+      "y": 28,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 544,
+      "layer": "",
+      "locked": false,
+      "name": "Text_fundo",
+      "persistentUuid": "be26700e-93fb-4ab5-8db6-2f189bc3fa1c",
+      "width": 557,
+      "x": 954,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 288,
+      "layer": "",
+      "locked": false,
+      "name": "Text_fundo",
+      "persistentUuid": "5ef94760-de58-46c7-ad78-5c30a9bd7cba",
+      "width": 320,
+      "x": 15,
+      "y": -51,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -744,6 +776,45 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\timer_fundo-1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 177.5,
+                    "y": 219.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Text_fundo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "timer_fundo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\timer_fundo-1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1118,12 +1189,12 @@
       "variables": [],
       "behaviors": [],
       "string": "Digite seu nome",
-      "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 70,
+      "font": "Prodelt Co.ttf",
+      "characterSize": 50,
       "color": {
-        "b": 28,
-        "g": 231,
-        "r": 248
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -1137,12 +1208,12 @@
       "variables": [],
       "behaviors": [],
       "string": "Toque aqui para iniciar",
-      "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 65,
+      "font": "Prodelt Co.ttf",
+      "characterSize": 45,
       "color": {
-        "b": 28,
-        "g": 231,
-        "r": 248
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -1163,7 +1234,7 @@
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
-        "color": "#ffffff",
+        "color": "#4a4a4a",
         "fontFamily": "Prodelt Co.ttf",
         "align": "left",
         "wordWrap": true
@@ -1186,14 +1257,14 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Inicio de partida",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1249,29 +1320,7 @@
               "subInstructions": []
             }
           ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AlignObject::ToScreenCenter"
-                  },
-                  "parameters": [
-                    "",
-                    "Texto_iniciar_game",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
+          "events": []
         },
         {
           "disabled": false,
@@ -3096,7 +3145,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5038,7 +5087,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5111,17 +5160,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5168,11 +5206,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
+                    "value": "MettreX"
                   },
                   "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
+                    "text_pecas",
+                    "+",
+                    "11"
                   ],
                   "subInstructions": []
                 }
@@ -5256,17 +5295,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5307,17 +5335,6 @@
                     "Text_desafio",
                     "=",
                     "\"3.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
                   ],
                   "subInstructions": []
                 }
@@ -5401,17 +5418,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5451,18 +5457,7 @@
                   "parameters": [
                     "Text_desafio",
                     "=",
-                    "\"3.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
+                    "\"4.\""
                   ],
                   "subInstructions": []
                 }
@@ -5546,17 +5541,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5596,18 +5580,7 @@
                   "parameters": [
                     "Text_desafio",
                     "=",
-                    "\"3.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
+                    "\"5.\""
                   ],
                   "subInstructions": []
                 }
@@ -5691,17 +5664,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5741,18 +5703,7 @@
                   "parameters": [
                     "Text_desafio",
                     "=",
-                    "\"3.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
+                    "\"6.\""
                   ],
                   "subInstructions": []
                 }
@@ -5836,17 +5787,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"102;204;0\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -5886,18 +5826,7 @@
                   "parameters": [
                     "Text_desafio",
                     "=",
-                    "\"3.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetColor"
-                  },
-                  "parameters": [
-                    "Text_desafio",
-                    "\"233;1;29\""
+                    "\"7.\""
                   ],
                   "subInstructions": []
                 }
