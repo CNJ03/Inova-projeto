@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.7400000000000005
+    "zoomFactor": 0.3000000000000006
   },
   "objectsGroups": [
     {
@@ -602,7 +602,7 @@
       "variables": [],
       "behaviors": [],
       "content": {
-        "text": "[b]Opcoes[/b]\n\nMusica\n\n\nEfeitos sonoros\n\n",
+        "text": "[b]Opcoes[/b]\n\nVolume global\n\n\nEfeitos sonoros\n\n",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -879,14 +879,14 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "comandos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1023,7 +1023,7 @@
                     "SOS 079.wav",
                     "2",
                     "yes",
-                    "10",
+                    "2",
                     "1"
                   ],
                   "subInstructions": []
@@ -1050,7 +1050,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1126,6 +1126,21 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+                    "1",
+                    "100",
+                    "GlobalVariable(Audio_efeitos_global)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "Scene"
                   },
                   "parameters": [
@@ -1142,7 +1157,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1243,24 +1258,25 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Cache"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
-                    "Creditos"
+                    "",
+                    "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+                    "1",
+                    "100",
+                    "GlobalVariable(Audio_efeitos_global)",
+                    "1"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PlaySound"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "",
-                    "abs-confirm-1.wav",
-                    "",
-                    "80",
-                    "1"
+                    "Creditos"
                   ],
                   "subInstructions": []
                 },
@@ -1383,13 +1399,14 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PlaySound"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
                     "",
-                    "abs-confirm-1.wav",
-                    "",
-                    "80",
+                    "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+                    "1",
+                    "100",
+                    "GlobalVariable(Audio_efeitos_global)",
                     "1"
                   ],
                   "subInstructions": []
@@ -1422,6 +1439,111 @@
         },
         {
           "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Sair_text",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Abas\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "Sair_text",
+                "=",
+                "125"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "sair_fundo",
+                "=",
+                "200"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+                    "1",
+                    "100",
+                    "GlobalVariable(Audio_efeitos_global)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -1437,7 +1559,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1700,18 +1822,6 @@
                     "GlobalVariableString(Audio_musica_global)"
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModGlobalVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "GlobalVariable(Audio_musica_global)"
-                  ],
-                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1962,18 +2072,6 @@
                     "GlobalVariableString(Audio_efeitos_global)"
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModGlobalVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "GlobalVariable(Audio_musica_global)"
-                  ],
-                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2065,13 +2163,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlaySound"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
-                "abs-cancel-1.wav",
+                "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+                "1",
                 "",
-                "80",
+                "GlobalVariable(Audio_efeitos_global)",
                 "1"
               ],
               "subInstructions": []
@@ -2198,96 +2297,6 @@
           },
           "comment": "aberto a camada \"abas\"",
           "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Sair_text",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "LayerVisible"
-              },
-              "parameters": [
-                "",
-                "\"Abas\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::Opacity"
-              },
-              "parameters": [
-                "Sair_text",
-                "=",
-                "125"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Opacity"
-              },
-              "parameters": [
-                "sair_fundo",
-                "=",
-                "200"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Quit"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
         },
         {
           "disabled": false,

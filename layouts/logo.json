@@ -1,16 +1,16 @@
 {
-  "b": 255,
+  "b": 111,
   "disableInputWhenNotFocused": true,
   "mangledName": "Logo",
   "name": "Logo",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 255,
+  "r": 111,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 255,
+  "v": 111,
   "uiSettings": {
     "grid": true,
     "gridB": 255,
@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.6000000000000003
+    "zoomFactor": 0.4000000000000002
   },
   "objectsGroups": [],
   "variables": [],
@@ -31,14 +31,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 480,
+      "height": 416,
       "layer": "",
       "locked": false,
       "name": "Logo",
       "persistentUuid": "4d6a6955-e0d1-40a2-9f81-1d519457f915",
-      "width": 512,
-      "x": 352,
-      "y": 128,
+      "width": 928,
+      "x": 192,
+      "y": 224,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -69,8 +69,8 @@
       "name": "Logo",
       "rightMargin": 0,
       "tags": "",
-      "texture": "assets\\logo_image-1-1.png",
-      "tiled": true,
+      "texture": "assets\\logo_image-1-1-1.png",
+      "tiled": false,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 32,
@@ -275,7 +275,7 @@
     },
     {
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {

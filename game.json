@@ -324,6 +324,33 @@
         "preloadAsMusic": true,
         "preloadAsSound": true,
         "userAdded": true
+      },
+      {
+        "file": "audios/StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "StartSelect,UI,set3,pure,warm,simple,quick,tonal,deaction.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo_image-1-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo_image-1-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "audios/mechanism_tiny_bot_layer_05.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "mechanism_tiny_bot_layer_05.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -345,6 +372,11 @@
       "name": "Audio_efeitos_global",
       "type": "string",
       "value": "100"
+    },
+    {
+      "name": "Recordes_tempo",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [

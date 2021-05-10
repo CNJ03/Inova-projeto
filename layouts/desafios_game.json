@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 32,
@@ -21,9 +21,9 @@
     "gridR": 158,
     "gridType": "rectangular",
     "gridWidth": 32,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.5000000000000089
+    "zoomFactor": 0.5200000000000098
   },
   "objectsGroups": [
     {
@@ -315,7 +315,7 @@
       "name": "text_desafio_titulo",
       "persistentUuid": "7fe0c068-1410-4f21-b19b-f46e67736a69",
       "width": 0,
-      "x": 1065,
+      "x": 1066,
       "y": 28,
       "zOrder": 16,
       "numberProperties": [],
@@ -453,11 +453,27 @@
     {
       "angle": 0,
       "customSize": true,
+      "height": 288,
+      "layer": "",
+      "locked": false,
+      "name": "Text_fundo",
+      "persistentUuid": "5ef94760-de58-46c7-ad78-5c30a9bd7cba",
+      "width": 320,
+      "x": 15,
+      "y": -51,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
       "height": 544,
       "layer": "",
       "locked": false,
       "name": "Text_fundo",
-      "persistentUuid": "be26700e-93fb-4ab5-8db6-2f189bc3fa1c",
+      "persistentUuid": "aad45c6f-e332-4af0-b8eb-72c1778529ef",
       "width": 557,
       "x": 954,
       "y": 0,
@@ -469,15 +485,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 288,
-      "layer": "",
+      "height": 736,
+      "layer": "Iniciar",
       "locked": false,
-      "name": "Text_fundo",
-      "persistentUuid": "5ef94760-de58-46c7-ad78-5c30a9bd7cba",
-      "width": 320,
-      "x": 15,
-      "y": -51,
-      "zOrder": 1,
+      "name": "Text_fundo_fundos",
+      "persistentUuid": "b185d20c-90e2-4aa4-a28c-fadd927f6175",
+      "width": 736,
+      "x": 288,
+      "y": 0,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -784,6 +800,45 @@
                   },
                   "centerPoint": {
                     "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Text_fundo_fundos",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "timer_fundo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\timer_fundo-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
                     "y": 0
@@ -1234,7 +1289,7 @@
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
-        "color": "#4a4a4a",
+        "color": "#000000",
         "fontFamily": "Prodelt Co.ttf",
         "align": "left",
         "wordWrap": true
@@ -1257,7 +1312,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Inicio de partida",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1364,6 +1419,18 @@
                 "\"min\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Text_fundo_fundos",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1441,109 +1508,155 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "VarGlobalTxt"
                   },
-                  "parameters": [],
-                  "subInstructions": [
+                  "parameters": [
+                    "Nome_usuario",
+                    "!=",
+                    "\"0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "Nome_usuario",
+                    "!=",
+                    "\"Seu nome\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "Nome_usuario",
+                    "!=",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Return"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::And"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
                       "subInstructions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "MouseButtonPressed"
+                            "value": "KeyPressed"
                           },
                           "parameters": [
                             "",
-                            "Left"
+                            "Return"
                           ],
                           "subInstructions": []
                         },
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SourisSurObjet"
+                            "value": "BuiltinCommonInstructions::And"
                           },
-                          "parameters": [
-                            "Texto_iniciar_game",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "Texto_iniciar_game",
+                                "",
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Iniciar\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetLayerEffectParameter"
+                      },
+                      "parameters": [
+                        "",
+                        "\"\"",
+                        "\"Effect_brilho\"",
+                        "\"brightness\"",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Time",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobalTxt"
+                      },
+                      "parameters": [
+                        "Nome_usuario",
+                        "=",
+                        "Nome_usuario_in.String()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Iniciar\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetLayerEffectParameter"
-                  },
-                  "parameters": [
-                    "",
-                    "\"\"",
-                    "\"Effect_brilho\"",
-                    "\"brightness\"",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Time",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "Nome_usuario",
-                    "=",
-                    "Nome_usuario_in.String()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              ]
             },
             {
               "disabled": false,
@@ -3145,7 +3258,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5067,6 +5180,30 @@
                 "Nome_usuario_in.String()"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Nome_usuario",
+                "=",
+                "Nome_usuario_in.String()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryObject::String"
+              },
+              "parameters": [
+                "Nome_usuario_in",
+                "=",
+                "SubStr(Nome_usuario_in.String(),0, 10)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -5148,6 +5285,21 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -5222,7 +5374,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5283,6 +5435,21 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -5335,6 +5502,18 @@
                     "Text_desafio",
                     "=",
                     "\"3.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "text_pecas",
+                    "-",
+                    "8"
                   ],
                   "subInstructions": []
                 }
@@ -5404,6 +5583,21 @@
               "parameters": [
                 "Peca_montagem_transp",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
               ],
               "subInstructions": []
             }
@@ -5529,6 +5723,21 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -5652,6 +5861,21 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -5773,6 +5997,21 @@
               "parameters": [
                 "Pneu_transpa",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "mechanism_tiny_bot_layer_05.wav",
+                "1",
+                "",
+                "50",
+                "1"
               ],
               "subInstructions": []
             }
