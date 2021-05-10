@@ -20,7 +20,7 @@
     "author": "Tech Boticis",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\CNJ\\Documents\\lab_botics_test",
     "maxFPS": 0,
     "minFPS": 20,
     "verticalSync": false,
@@ -102,15 +102,6 @@
         "kind": "font",
         "metadata": "",
         "name": "fontes\\Schoolwork-Regular.ttf",
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/logo_image-1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\logo_image-1-1.png",
-        "smoothed": true,
         "userAdded": true
       },
       {

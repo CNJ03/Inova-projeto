@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.4000000000000002
+    "zoomFactor": 0.4200000000000003
   },
   "objectsGroups": [],
   "variables": [],
@@ -38,7 +38,7 @@
       "persistentUuid": "4d6a6955-e0d1-40a2-9f81-1d519457f915",
       "width": 928,
       "x": 192,
-      "y": 224,
+      "y": 160,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
