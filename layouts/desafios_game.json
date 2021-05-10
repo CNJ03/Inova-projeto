@@ -1312,7 +1312,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Inicio de partida",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2074,7 +2074,7 @@
               "parameters": [
                 "Time",
                 "-",
-                "10"
+                "11"
               ],
               "subInstructions": []
             }
