@@ -23,7 +23,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.3000000000000006
+    "zoomFactor": 0.3400000000000021
   },
   "objectsGroups": [
     {
@@ -126,22 +126,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 768,
-      "layer": "",
-      "locked": false,
-      "name": "Fundo_menu",
-      "persistentUuid": "09318946-ec9a-4d7d-916b-60e7431f3908",
-      "width": 1344,
-      "x": 0,
-      "y": -32,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "height": 448,
       "layer": "",
       "locked": false,
@@ -225,22 +209,6 @@
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "Titulo_game",
-      "persistentUuid": "bfce164f-03fe-4c26-88e6-7add6a4b1c6e",
-      "width": 0,
-      "x": 160,
-      "y": 96,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
       "name": "Copyright",
       "persistentUuid": "1cb4d87d-c496-43e4-8479-1f9f8073c5f8",
       "width": 0,
@@ -260,8 +228,8 @@
       "name": "Logo_text",
       "persistentUuid": "629567c3-0cc7-46b6-9629-155171bcbcf1",
       "width": 0,
-      "x": 1104,
-      "y": 675,
+      "x": 1075,
+      "y": 686,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -410,26 +378,56 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 736,
+      "layer": "",
+      "locked": false,
+      "name": "Fundo_menu2",
+      "persistentUuid": "ba1b5570-16ef-4e07-937d-e983e4fccf07",
+      "width": 1344,
+      "x": 0,
+      "y": 0,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 576,
+      "layer": "",
+      "locked": false,
+      "name": "Titulo_game",
+      "persistentUuid": "f4f318a1-073b-4e81-84d8-99c0861b288e",
+      "width": 672,
+      "x": 320,
+      "y": 128,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
     {
-      "bold": true,
-      "italic": false,
       "name": "Titulo_game",
-      "smoothed": true,
       "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
+      "type": "BBText::BBText",
       "variables": [],
       "behaviors": [],
-      "string": "Lab botics",
-      "font": "good times rg.ttf",
-      "characterSize": 130,
-      "color": {
-        "b": 28,
-        "g": 231,
-        "r": 248
+      "content": {
+        "text": "[outline=black]Lab botics[/outline]",
+        "opacity": 255,
+        "fontSize": 180,
+        "visible": true,
+        "color": "#0055b9",
+        "fontFamily": "Prodelt Co.ttf",
+        "align": "left",
+        "wordWrap": true
       }
     },
     {
@@ -519,8 +517,8 @@
       "variables": [],
       "behaviors": [],
       "string": "Tech botics",
-      "font": "fontes\\Schoolwork-Regular.ttf",
-      "characterSize": 50,
+      "font": "good times rg.ttf",
+      "characterSize": 25,
       "color": {
         "b": 255,
         "g": 255,
@@ -619,7 +617,7 @@
       "variables": [],
       "behaviors": [],
       "content": {
-        "text": "[b]Gerente de projeto[/b]\nVinicius andrade\n\n[b]Programador[/b]\nCarleilton\n\n[b]Roteiristas e apoio técnico[/b]\nMaxley furtado \nGabryella Santana \nPaula Vitoria\n\n[b]Designers[/b]\nJose Junior\n\n\n[b]Tech Botics Studios[/b]",
+        "text": "[b]Gerente de projeto[/b]\n[size=28]Vinicius andrade[/size]\n\n[b]Programador[/b]\n[size=28]Carleilton[/size]\n\n[b]Roteiristas e apoio técnico[/b]\n[size=28]Maxley furtado \nGabryella Santana \nPaula Vitoria[/size]\n\n[b]Designers[/b]\n[size=28]Jose Junior\nWanderson[/size]\n\n\n[b]Tech Botics Studios[/b]",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -671,10 +669,10 @@
       "bottomMargin": 0,
       "height": 32,
       "leftMargin": 0,
-      "name": "Fundo_menu",
+      "name": "Fundo_menu2",
       "rightMargin": 0,
       "tags": "",
-      "texture": "assets\\fundo_menu-1.png",
+      "texture": "binary-1536646_1920.jpg",
       "tiled": false,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -861,6 +859,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "NewObject",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "#000000",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "events": [
@@ -1559,7 +1574,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1661,6 +1676,18 @@
                   "parameters": [
                     "Option_efeitos_sonoros",
                     "\"65;117;5\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ativo_controlefeitos",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -1911,6 +1938,18 @@
                   "parameters": [
                     "Option_musica",
                     "\"65;117;5\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ativo_controlmusica",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -2649,7 +2688,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "Abas",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

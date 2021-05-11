@@ -160,15 +160,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/fundo_menu-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fundo_menu-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/fundo_set_menu-1-0.png",
         "kind": "image",
         "metadata": "",
@@ -342,6 +333,15 @@
         "preloadAsMusic": true,
         "preloadAsSound": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/binary-1536646_1920.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fundo_menu",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
